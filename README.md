@@ -58,7 +58,7 @@ Number of iterations. Should be at least 80 or so. With a few hundred iterations
 
 >  `"out_file": ["something"],`
 
-Output file name; files will be named, for example, `"something_1.png"`, `"something_2.png"`, with numbers in increasing order. I recommend using a unique name, such as `"John_robot"` if you're John and you want to create a series of images involving robots. Existing files will NOT be overwritten. With each output file, there will be one `.txt` file that contains the actual VQGAN call that was used to create the image. This can be useful to remember how the image was actually created...
+Output file name; files will be named, for example, `"something_1.png"`, `"something_2.png"`, with numbers in increasing order. I recommend using a unique name, such as `"John_robot"` if you're John and you want to create a series of images involving robots. Existing files will NOT be overwritten. With each output file, there will be one `.txt` file that contains the actual VQGAN-CLIP call that was used to create the image. This can be useful to remember how the image was actually created...
 
 ### Output folder
 
@@ -83,3 +83,10 @@ Number of times the task should be repeated. For example, with `"each"` equal to
 >  `"resolution": [450, 300]`
 
 Image size (number of pixels) in x and y direction. Must not be greater than $450\times 300$. Note that `"portrait"` will *always* define whether the image is in portrait or landscape mode, i.e. the order of the values in `"resolution"` will be overridden. 
+
+## Background reading
+
+- Katherine Crowson's Github repo for running VQGAN+CLIP locally: <https://github.com/nerdyrodent/VQGAN-CLIP>
+
+- L.J. Miranda: The Illustrated VQGAN <https://ljvmiranda921.github.io/notebook/2021/08/08/clip-vqgan/>
+
