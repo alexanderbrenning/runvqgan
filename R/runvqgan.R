@@ -10,6 +10,7 @@ source("R/vqgan-functions.R")
 
 # Find task files (see Readme file for details):
 fnms <- get_task_files(path = wd, priority_folder = "alex")
+fnms
 
 # Process the task files - this cannot be parallelized
 # because memory is limited:
