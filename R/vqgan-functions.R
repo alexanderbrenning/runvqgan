@@ -59,6 +59,7 @@ generate <- function(
   params <- list(
     text = text,
     style = style,
+    in_file = in_file,
     out_path = file.path(out_path, out_folder),
     out_file = out_file,
     template_file = template_file,
@@ -150,6 +151,7 @@ process_task_file <- function(filename,
       # Run VQGAN:  
       res <- try(generate(text = params$text, 
                           style = params$style, 
+                          in_file = params$in_file,
                           out_file = params$out_file, 
                           out_folder = params$out_folder, 
                           iterations = params$iterations,
